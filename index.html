@@ -1,0 +1,215 @@
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+                    document.body.innerHTML
+                    var retryCountStr = retryMatch ? retryMatch[2] : "0";
+                    var showLessText = "show less";
+    <!--#include virtual="static/welcomePageAdditionalContent.html" -->
+                ? '/'
+            console.log("(TIME) window loaded event:\t", loadedEventTime);
+                    var reloadLink = document.getElementById('reloadLink');
+        // IE11 and earlier can be identified via their user agent and be
+                        + "<br/><br/></div>"
+
+                                    + "user-select:text;");
+                    return true;
+            };
+                                    "display: block;"
+                    .then(reg => {
+            "utils.js",
+                        + "text-decoration: underline;"
+                        + "<br/><br/> "
+        // redirected to a page that is known to have no newer js syntax.
+                    window.setTimeout(
+                window.removeEventListener(
+                        href = href.replace(
+        window.addEventListener(
+                                moreInfoElem.setAttribute(
+                        + "</div>";
+        // XXX the code below listeners for errors and displays an error message
+                    })
+                    }
+    <!--#include virtual="fonts.html"-->
+
+                        var hashIdx = href.indexOf("#");
+        document.addEventListener('DOMContentLoaded', () => {
+                                    = document.getElementById("moreInfo");
+        if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
+
+                            var moreInfoElem
+                        + "&nbsp;&nbsp;&nbsp;"
+                        + "We will try again shortly. In the mean time, check for problems with your Internet connection!"
+                                    "style", "display: none;");
+                        postLoadErrorHandler(fileRef);
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+            "do_external_connect.js",
+
+                };
+            const contextRootEndIndex = pathname.lastIndexOf('/');
+            "all.css"
+                    // "rCounter" query parameter
+
+            }
+                        delay = 10000;
+            JitsiMeetJS.app.renderEntryPoint({
+                    if (retryMatch == null) {
+                        var separator = href.indexOf("?") === -1 ? "?" : "&";
+            var roomName = encodeURIComponent(window.location.pathname);
+
+            'error', loadErrHandler, true /* capture phase type of listener */);
+  </head>
+  </body>
+            if (!JitsiMeetJS.app) {
+            var target = e.target;
+
+                    var delay = Math.pow(2, retryCount) * 2000;
+                        console.log('Service worker registered.', reg);
+                    if (typeof postLoadErrorHandler === "function") {
+
+  <head>
+        window.EXCALIDRAW_ASSET_PATH = 'libs/';
+
+            var fileRef = (target.src ? target.src : target.href);
+        });
+                        + "display: none;'>" + "Missing " + fileRef
+                Component: JitsiMeetJS.app.entryPoints.APP
+                        + "font-size:small;"
+                window.onload = function() {
+            if (shouldRegisterWorker) {
+                        } else {
+                        + "cursor: pointer'>" + showMoreText + "</a>"
+    <script><!--#include virtual="/interface_config.js" --></script>
+                    // "exponential backoff". The retry attempt is passes as
+            const isEmbedded = () => {
+                        + "transform: translate(-50%, -50%)'>"
+                        + "text-align: center;"
+                            var hashPart = href.substr(hashIdx);
+            );
+            "config.js",
+                                + separator + "rCounter=1" + hashPart;
+                        });
+                        + "font-weight: 400;"
+                        var separator = retryMatch[1];
+            })
+
+        var criticalFiles = [
+    <!--#include virtual="plugin.head.html" -->
+        <div>JavaScript is disabled. </br>For this site to work you have to enable JavaScript.</div>
+                    }
+                            separator + "rCounter=" + (retryCount + 1));
+        // the base pointing to the CDN. This way we can generate a full URL which will bypass the base.
+            const shouldRegisterWorker = !isElectron && !isEmbedded() && 'serviceWorker' in navigator;
+                && criticalFiles.some(
+    <!--#include virtual="static/settingsToolbarAdditionalContent.html" -->
+                    // The whole complex part below implements page reloads with
+        var loadErrHandler = function(e) {
+                    var showMoreText = "show more";
+                navigator.serviceWorker
+
+        window.addEventListener('load', function() {
+                        + "<a id ='reloadLink' style='"
+    <script>
+    <!--#include virtual="body.html" -->
+
+                        + "position: absolute;top: 50%;left: 50%;"
+                            }
+
+  <body>
+    </script>
+</html>
+                }
+    <script src="libs/app.bundle.min.js?v=139"></script>
+                return;
+
+                        if (hashIdx === -1) {
+    <div id="react" role="main"></div>
+            window.loadedEventTime = window.performance.now();
+                            if (showMoreElem.innerHTML === showMoreText) {
+                                showMoreElem.innerHTML = showMoreText;
+            // Error on <script> and <link>(CSS)
+                : pathname.substring(0, contextRootEndIndex + 1)
+    <link rel="stylesheet" href="css/all.css">
+                            href += separator + "rCounter=1";
+                                    + "font-size:small;"
+                        + "font-size: medium;"
+                        = "<div style='"
+        document.querySelector('#manifest-placeholder').setAttribute('href', window.location.origin + contextRoot(window.location.pathname) + 'manifest.json');
+                        + "font-size:small;"
+                    if (isNaN(delay) || delay < 2000 || delay > 60000)
+    <!--#include virtual="static/welcomePageAdditionalCard.html" -->
+                        + "Uh oh! We couldn't fully download everything we needed :("
+                        + "<div id='moreInfo' style='"
+                    var retryMatch = href.match(/.+(\?|&)rCounter=(\d+)/);
+        window.indexLoadedTime = window.performance.now();
+        }
+                        }
+                            else {
+                try {
+                            /(\?|&)rCounter=(\d+)/,
+    <script>
+                    // Call extra handler if defined.
+            "app.bundle.min.js",
+
+                        + "<br/> "
+        };
+        // Dynamically generate the manifest location URL. It must be served from the document origin, and we may have
+
+    <!--#include virtual="title.html" -->
+        function contextRoot(pathname) {
+                                    + "color:#FF991F;"
+                        + "'>reload now</a>"
+                    return window.self !== window.top;
+            "interface_config.js",
+                            href = href.substr(0, hashIdx)
+            if (("SCRIPT" === target.tagName || "LINK" === target.tagName)
+                    var retryCount = Number.parseInt(retryCountStr);
+                            }
+    </noscript>
+            }
+            }
+
+            const isElectron = navigator.userAgent.includes('Electron');
+                    'error', loadErrHandler, true /* capture phase */);
+
+                    var href = window.location.href;
+
+                    var showMoreElem = document.getElementById("showMore");
+                        function () { window.location.replace(href); }, delay);
+        ];
+            // <script> will have .src and <link> .href
+        }
+        console.log("(TIME) index.html loaded:\t", indexLoadedTime);
+            "lib-jitsi-meet.min.js",
+                    .catch(err => {
+    <meta charset="utf-8">
+                    function(file) { return fileRef.indexOf(file) !== -1 })) {
+                                    "style",
+                    showMoreElem.addEventListener('click', function () {
+    <meta name="theme-color" content="#2A3A4B">
+                contextRootEndIndex === -1
+        });
+            return (
+                        + "text-decoration: underline;"
+                    } else {
+                        + "<a id='showMore' style='"
+            window.location.pathname = 'static/recommendedBrowsers.html';
+
+                    reloadLink.setAttribute('href', href);
+                    .register(window.location.origin + contextRoot(window.location.pathname) + 'pwa-worker.js')
+    <!--#include virtual="base.html" -->
+
+    <link rel="manifest" id="manifest-placeholder">
+    <noscript aria-hidden="true">
+                                moreInfoElem.setAttribute(
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        // The intention is to prevent from displaying broken page.
+
+<html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
+                } catch (e) {
+                    });
+
+    <script><!--#include virtual="/config.js" --></script><!-- adapt to your needs, i.e. set hosts and bosh path -->
+    <!--#include virtual="head.html" -->
+        // in the document body when any of the required files fails to load.
+    <script src="libs/lib-jitsi-meet.min.js?v=139"></script>
+                                showMoreElem.innerHTML = showLessText;
+                        console.log(err);
+    </script>
